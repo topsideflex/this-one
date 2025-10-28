@@ -1,22 +1,20 @@
 {
-  "name": "the-market-pl",
+  "name": "the-market-pl-frontend",
   "version": "1.0.0",
-  "description": "Backend for THE MARKET PL - flat layout version",
-  "license": "UNLICENSED",
-  "main": "server.js",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5173"
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^7.5.0",
-    "dotenv": "^16.3.1",
-    "cors": "^2.8.5",
-    "jsonwebtoken": "^9.0.2",
-    "stripe": "^12.17.0",
-    "bcryptjs": "^2.4.3"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
   },
-  "engines": {
-    "node": "18.x"
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.10"
   }
 }
